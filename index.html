@@ -49,6 +49,11 @@
             </li>
           </ul>
         </address>
+        <button class="open-menu-btn">
+          <svg width="24px" height="24px">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -56,7 +61,9 @@
       <section class="first-section">
         <div class="container">
           <h1 class="page-title">Effective Solutions for Your Business</h1>
-          <button class="main-btn" type="button">Order Service</button>
+          <button class="main-btn" data-modal-open type="button">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -484,9 +491,9 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
-        <button class="modal-close-btn" type="button">
+        <button class="modal-close-btn" data-modal-close type="submit">
           <svg
             class="modal-icon-close-btn"
             aria-label="icon close"
@@ -595,5 +602,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
