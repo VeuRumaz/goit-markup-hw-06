@@ -192,18 +192,16 @@ header {
 
 .second-section-list {
   display: flex;
+  flex-direction: column;
+  gap: 72px;
 }
 
-.second-section-list-item {
-  width: calc((100% - 72px) / 4);
-}
-
-.second-section-list-item:not(:last-child) {
-  margin-right: 24px;
-}
+/* .second-section-list-item {
+  gap: 8px;
+} */
 
 .div-icon {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
@@ -226,15 +224,17 @@ header {
 }
 
 .third-header {
+  text-align: center;
   margin-bottom: 8px;
   color: #2e2f42;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
 }
 
 .text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -256,17 +256,18 @@ header {
 
 .third-section {
   display: flex;
+  flex-direction: column;
   background: #f4f4fd;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .team {
   display: flex;
-  gap: 24px;
+  gap: 72px;
+  flex-direction: column;
 }
 
 .team-info {
-  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   background-color: #ffffff;
@@ -283,6 +284,24 @@ header {
   padding: 32px 0;
 }
 
+.team-header {
+  text-align: center;
+  margin-bottom: 8px;
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.team-text {
+  text-align: center;
+  margin-bottom: 8px;
+  color: #2e2f42;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 .social {
   fill: #f4f4fd;
 }
@@ -318,18 +337,29 @@ header {
 
 /* fourth-section */
 
-/* .fourth-section {
-} */
+.second-header-ourportf {
+  margin-bottom: 72px;
+  color: #2e2f42;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
 .portf-list {
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
-  column-gap: 24px;
+  /* column-gap: 24px; */
 }
 
 .portf-list-item {
-  width: calc((100% - 48px) / 3);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  flex-direction: column;
+  /* width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .portf-list-item:hover {
@@ -346,19 +376,6 @@ header {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  /* margin-bottom: 8px; */
-}
-
-.second-header-ourportf {
-  margin-bottom: 72px;
-  color: #2e2f42;
-  font-weight: 700;
-  font-size: 36px;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
 }
 
 .img-overlay {
@@ -367,8 +384,6 @@ header {
   flex-direction: column;
   gap: 0;
   overflow: hidden;
-  width: 360px;
-  height: 300px;
   background: #ffffff;
 }
 
@@ -390,16 +405,32 @@ header {
   transform: translateY(100%);
 }
 
+.ourportf-header {
+  font: 500 20px / 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.ourportf-text {
+  font: 16px / 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
 /* footer */
 
 .down-bar {
-  padding: 100px 0;
+  padding: 96px 0;
   background-color: #2e2f42;
+  text-align: center;
 }
 
 .ftr-box {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+  align-content: center;
 }
 
 .ftr-logo {
@@ -412,6 +443,7 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .ftr-studio {
@@ -425,15 +457,7 @@ header {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.ftr-one {
-  margin-right: 120px;
-}
-
-.ftr-two {
-  align-items: baseline;
-  margin-right: 80px;
+  text-align: start;
 }
 
 .ftr-two-text {
@@ -443,6 +467,7 @@ header {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .footer-two-list {
@@ -486,6 +511,9 @@ header {
 .ftr-form {
   display: flex;
   gap: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .ftr-form-btn {
@@ -515,11 +543,13 @@ header {
 
 .form-label {
   display: flex;
+  height: 40px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .form-input {
-  width: 264px;
-  height: 40px;
+  min-width: 288px;
   padding-left: 16px;
   border: 1px solid #fff;
   border-radius: 4px;
@@ -837,7 +867,7 @@ header {
 
 /* Tablet - min-width: 768px */
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
@@ -908,6 +938,7 @@ header {
       ),
       url(../images/Tablet/Tabletbg.jpg);
   }
+
   .page-title {
     max-width: 496px;
     margin-right: auto;
@@ -917,9 +948,10 @@ header {
     line-height: 1.07;
   }
 }
-/* PC - min-width: 1158px */
 
-@media screen and (min-width: 1158px) {
+/*  PC - min-width: 1158px */
+
+@media only screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -947,5 +979,51 @@ header {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/PC/bgimage.jpg);
+  }
+
+  .div-icon {
+    display: flex;
+  }
+
+  .second-section-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .second-section-list-item:not(:last-child) {
+    margin-right: 24px;
+  }
+  .team-info {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .ftr-one {
+    margin-right: 120px;
+  }
+  .ftr-two {
+    align-items: baseline;
+    margin-right: 80px;
+  }
+}
+/* min-resolution: 192dpi */
+
+@media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
+  .first-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Tablet/Tabletbg@2x.jpg);
+  }
+}
+
+@media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
+  .first-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/PC/bgimage@2x.jpg);
   }
 }
