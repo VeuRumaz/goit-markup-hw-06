@@ -115,12 +115,14 @@ header {
 
 /* first section */
 
+.first-section .container{
+  padding: 0;
+}
 .first-section {
   display: flex;
   max-width: 320px;
   margin: 0 auto;
   padding: 72px 52px;
-  /* padding: 0; */
   background-color: #2e2f42;
   background-image: linear-gradient(
       to bottom,
@@ -137,19 +139,21 @@ header {
 .page-title {
   display: flex;
   max-width: 216px;
-    color: #ffffff;
+  color: #ffffff;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  padding: 72px 0;
+  margin: 0 auto;
 }
 
 .main-btn {
   display: block;
   min-width: 169px;
   height: 56px;
-  margin: 72px auto;
+  margin: 0 auto;
   padding: 16px 32px;
   border: none;
   border-radius: 4px;
@@ -1097,6 +1101,7 @@ header {
 
   .first-section {
     max-width: 768px;
+    padding: 112px 136px;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -1107,15 +1112,14 @@ header {
 
   .page-title {
     max-width: 496px;
-    margin: 112px auto 36px auto;
+    margin: 0 auto 36px auto;
     font-size: 56px;
     line-height: 1.07;
+    padding: 0;
   }
-  .main-btn {
-    margin: 0 auto 112px auto;
-  }
+ 
   .second-section .container {
-    max-width: 584px;
+    max-width: 768px;
   }
 
   .second-section-list {
@@ -1221,6 +1225,9 @@ header {
 
   .first-section {
     max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    margin: 0 auto;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -1230,7 +1237,7 @@ header {
   }
 
   .second-section .container {
-    max-width: 1128px;
+    max-width: 1158px;
   }
   .second-section-list-item {
     gap: 8px;
@@ -1244,9 +1251,7 @@ header {
   .second-section-list-item {
     width: calc((100% - 72px) / 4);
   }
-  .second-section-list-item:not(:last-child) {
-    margin-right: 24px;
-  }
+
 
   .third-header {
     font-weight: 500;
@@ -1260,7 +1265,7 @@ header {
     line-height: 1.5;
   }
   .third-section .container {
-    max-width: 1128px;
+    max-width: 1158px;
   }
   .team {
     gap: 24px;
@@ -1270,7 +1275,7 @@ header {
   }
 
   .fourth-section .container {
-    max-width: 1128px;
+    max-width: 1158px;
   }
   .portf-list {
     display: flex;
@@ -1289,13 +1294,14 @@ header {
     display: flex;
   }
   .ftr-box .container {
-    max-width: 1128px;
+    max-width: 1158px;
     padding: 0;
   }
   .ftr-box {
     display: flex;
     align-items: baseline;
     flex-wrap: nowrap;
+    gap: 0;
   }
 
   .ftr-one {
