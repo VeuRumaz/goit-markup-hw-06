@@ -196,10 +196,6 @@ header {
   gap: 72px;
 }
 
-/* .second-section-list-item {
-  gap: 8px;
-} */
-
 .div-icon {
   display: none;
   justify-content: center;
@@ -353,13 +349,10 @@ header {
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
-  /* column-gap: 24px; */
 }
 
 .portf-list-item {
   flex-direction: column;
-  /* width: calc((100% - 48px) / 3);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .portf-list-item:hover {
@@ -406,13 +399,16 @@ header {
 }
 
 .ourportf-header {
-  font: 500 20px / 1.2;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
 }
 .ourportf-text {
-  font: 16px / 1.5;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
@@ -942,7 +938,6 @@ header {
   .page-title {
     max-width: 496px;
     margin: 112px auto 36px auto;
-
     font-size: 56px;
     line-height: 1.07;
   }
@@ -1025,6 +1020,9 @@ header {
 /*  PC - min-width: 1158px */
 
 @media only screen and (min-width: 1158px) {
+  section {
+    padding: 120px 0;
+  }
   .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -1054,27 +1052,91 @@ header {
       url(../images/PC/bgimage.jpg);
   }
 
+  .second-section .container {
+    max-width: 1128px;
+  }
+  .second-section-list-item {
+    gap: 8px;
+  }
   .div-icon {
     display: flex;
   }
-
+  .second-section-list {
+    flex-wrap: nowrap;
+  }
   .second-section-list-item {
     width: calc((100% - 72px) / 4);
   }
-
   .second-section-list-item:not(:last-child) {
     margin-right: 24px;
+  }
+
+  .third-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .third-section .container {
+    max-width: 1128px;
+  }
+  .team {
+    gap: 24px;
   }
   .team-info {
     width: calc((100% - 72px) / 4);
   }
 
+  .fourth-section .container {
+    max-width: 1128px;
+  }
+  .portf-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+  }
+
+  .portf-list-item {
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .down-bar {
+    padding: 100px 0;
+    display: flex;
+  }
+  .ftr-box .container {
+    max-width: 1128px;
+    padding: 0;
+  }
+  .ftr-box {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+  }
+
   .ftr-one {
     margin-right: 120px;
   }
+  .ftr-text {
+    min-width: 264px;
+  }
+
   .ftr-two {
     align-items: baseline;
     margin-right: 80px;
+  }
+
+  .form-input {
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
   }
 }
 
