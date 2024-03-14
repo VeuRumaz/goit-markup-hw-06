@@ -907,7 +907,7 @@ header {
   }
   .mobile-menu-container {
     position: relative;
-    justify-content: space-between;
+    justify-content: center;
     
   }
 
@@ -933,7 +933,7 @@ header {
   .mobile-nav-list {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     gap: 40px;
   }
@@ -941,7 +941,7 @@ header {
   .mobile-address-list {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     gap: 24px;
   }
