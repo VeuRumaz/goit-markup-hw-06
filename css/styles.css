@@ -1142,6 +1142,17 @@ header {
 
 /* min-resolution: 192dpi */
 
+@media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
+  .first-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Mobile/Dark-bg@2x.jpg);
+  }
+}
+
 @media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
   .first-section {
     background-image: linear-gradient(
