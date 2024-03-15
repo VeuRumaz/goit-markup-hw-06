@@ -40,7 +40,7 @@ img {
   margin-right: auto;
 }
 
-.section {
+section {
   padding: 96px 0;
 }
 
@@ -115,14 +115,11 @@ header {
 
 /* first section */
 
-.first-section .container{
-  padding: 0;
-}
 .first-section {
   display: flex;
   max-width: 320px;
   margin: 0 auto;
-  padding: 72px 52px;
+
   background-color: #2e2f42;
   background-image: linear-gradient(
       to bottom,
@@ -178,7 +175,7 @@ header {
 
 .second-section {
   display: flex;
-  padding: 72px 52px;
+
 }
 
 .visually-hidden {
@@ -259,7 +256,7 @@ header {
   flex-direction: column;
   background: #f4f4fd;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  padding: 72px 52px;
+
 }
 
 .team {
@@ -337,6 +334,7 @@ header {
 }
 
 /* fourth-section */
+
 
 .second-header-ourportf {
   margin-bottom: 72px;
@@ -432,6 +430,7 @@ header {
   gap: 72px;
   align-items: center;
   align-content: center;
+  margin: 0;
 }
 
 .ftr-logo {
